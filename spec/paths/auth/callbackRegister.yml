@@ -1,6 +1,6 @@
 get:
   tags: ["auth"]
-  operationId: "RegisterOauthUser"
+  operationId: "RegisterCalback"
   responses:
     200:
       description: OK

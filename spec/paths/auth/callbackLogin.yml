@@ -1,6 +1,6 @@
 get:
   tags: ["auth"]
-  operationId: "LoginOauthUser"
+  operationId: "LoginCallback"
   responses:
     200:
       description: OK

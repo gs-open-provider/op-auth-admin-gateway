@@ -1,6 +1,6 @@
 post:
   tags: ["auth"]
-  operationId: "LoginOPUser"
+  operationId: "LoginUser"
   parameters:
     - name: loginRequest
       in: body
