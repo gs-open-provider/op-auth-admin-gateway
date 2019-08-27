@@ -1,10 +1,11 @@
 get:
-  tags: ["users-management"]
+  tags: ["auth"]
+  operationId: "LoginOauthUser"
   responses:
     200:
       description: OK
       schema:
-        $ref: './definitions/users_management/allUsersResponse.yml'
+        $ref: './definitions/auth/loginResponse.yml'
     400:
       description: BAD REQUEST
       schema:

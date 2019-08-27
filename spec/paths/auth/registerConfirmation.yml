@@ -1,5 +1,6 @@
 get:
-  tags: ["register"]
+  tags: ["auth"]
+  operationId: "RegisterConfirmation"
   parameters:
     - in: path
       name: token

@@ -1,15 +1,11 @@
 get:
-  tags: ["domain-management"]
-  parameters:
-    - in: path
-      name: name
-      required: true
-      type: string
+  tags: ["auth"]
+  operationId: "RegisterOauthUser"
   responses:
     200:
       description: OK
       schema:
-        $ref: './definitions/domain_management/singleDomainResponse.yml'
+        $ref: './definitions/auth/loginResponse.yml'
     400:
       description: BAD REQUEST
       schema:

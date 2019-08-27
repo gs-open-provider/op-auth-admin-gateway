@@ -1,5 +1,6 @@
 post:
-  tags: ["register"]
+  tags: ["auth"]
+  operationId: "RegisterUserDetails"
   parameters:
     - name: registerRequest
       in: body

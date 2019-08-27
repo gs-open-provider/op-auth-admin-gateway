@@ -24,64 +24,10 @@ paths:
     $ref: ./paths/auth/login.yml
   /v1/auth/refresh-token:
     $ref: ./paths/auth/refreshToken.yml
-  /v1/auth/reset-password-request/{email}:
-    $ref: ./paths/auth/resetPasswordReq.yml
-  /v1/auth/reset-password-email-confirmation/{token}:
-    $ref: ./paths/auth/resetPasswordConf.yml
-  /v1/auth/reset-password:
-    $ref: ./paths/auth/resetPassword.yml
-  /v1/oauth2/google-signup-cb:
-    $ref: ./paths/auth/callbackGoogle.yml
-  /v1/oauth2/google-signin-cb:
-    $ref: ./paths/auth/callbackGoogleLogin.yml
-  /v1/oauth2/facebook-signup-cb:
-    $ref: ./paths/auth/callbackFacebook.yml
-  /v1/oauth2/facebook-signin-cb:
-    $ref: ./paths/auth/callbackFacebookLogin.yml
-  /dashboard-details/{email}/{type}:
-    $ref: ./paths/dashboardDetails.yml
-  /dashboard-setup:
-    $ref: ./paths/dashboardSetup.yml
-  /v1/admin/users:
-    $ref: ./paths/users_management/getUsers.yml
-  /v1/admin/lock-user:
-    $ref: ./paths/users_management/lockUser.yml
-  /v1/admin/user/customizations/{id}:
-    $ref: ./paths/users_management/getUserCustomization.yml
-  /v1/admin/user/customizations:
-    $ref: ./paths/users_management/userCustomization.yml
-  /v1/admin/toplevel-domain:
-    $ref: ./paths/domain_management/toplevelDomain.yml
-  /v1/admin/toplevel-domain/{name}:
-    $ref: ./paths/domain_management/getToplevelDomain.yml
-  /v1/admin/toplevel-domain/lock:
-    $ref: ./paths/domain_management/lockToplevelDomain.yml
-  /v1/admin/domain/customizations/{name}:
-    $ref: ./paths/domain_management/getDomainCustomization.yml
-  /v1/admin/domain/customizations:
-    $ref: ./paths/domain_management/domainCustomization.yml
-  /v1/admin/fields:
-    $ref: ./paths/fields_management/fields.yml
-  /v1/admin/fields/{name}:
-    $ref: ./paths/fields_management/getField.yml
-  /v1/admin/entity-fields/{entity}/{key}:
-    $ref: ./paths/fields_management/getEntityFields.yml
-  /v1/admin/entity-fields:
-    $ref: ./paths/fields_management/entityFields.yml
-  /v2/admin/entity-fields:
-    $ref: ./paths/fields_management/entityFieldsV2.yml
-  /v1/admin/news/{domain}:
-    $ref: ./paths/newsfeed_management/getNewsfeeds.yml
-  /v1/admin/news:
-    $ref: ./paths/newsfeed_management/newsfeeds.yml
-  /v1/admin/rss:
-    $ref: ./paths/newsfeed_management/rssfeeds.yml
-  /v1/admin/rss/domain/{domain}:
-    $ref: ./paths/newsfeed_management/getDomainRssfeeds.yml
-  /v1/admin/rss/domain:
-    $ref: ./paths/newsfeed_management/domainRssfeeds.yml
-  /v1/admin/dashboard:
-    $ref: ./paths/dashboard_management/superDashboardData.yml
+  /v1/oauth2/oauth-signup-cb:
+    $ref: ./paths/auth/callbackRegister.yml
+  /v1/oauth2/oauth-signin-cb:
+    $ref: ./paths/auth/callbackLogin.yml
 definitions:
   generalResponse:
     $ref: ./definitions/generalResponse.yml

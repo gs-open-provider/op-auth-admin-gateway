@@ -1,5 +1,6 @@
 get:
-  tags: ["login"]
+  tags: ["auth"]
+  operationId: "RefreshToken"
   responses:
     200:
       description: OK
