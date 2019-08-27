@@ -1,0 +1,63 @@
+type: object
+properties:
+  success:
+    type: boolean
+  error:
+    type: object
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+  data:
+    type: object
+    properties:
+      accessToken:
+        type: string
+      expiresIn:
+        type: string
+      role:
+        type: string
+      userType:
+        type: string
+      userRef:
+        type: string
+      domain:
+        type: string
+      customizations:
+        type: object
+        properties:
+          logoURL:
+            type: string
+          textFont:
+            type: string
+          textFontSize:
+            type: string
+          textFontColor:
+            type: string
+          header1Font:
+            type: string
+          header1FontSize:
+            type: string
+          header1FontColor:
+            type: string
+          header2Font:
+            type: string
+          header2FontSize:
+            type: string
+          header2FontColor:
+            type: string
+          backgroundImageURL:
+            type: string
+          backgroundColor:
+            type: string
+          navbarColor:
+            type: string
+          navbarFont:
+            type: string
+          navbarFontSize:
+            type: string
+          navbarFontColor:
+            type: string
+          navbarSelectColor:
+            type: string

@@ -1,0 +1,10 @@
+type: object
+properties:
+  name:
+    type: string
+  owner:
+    type: string
+  description:
+    type: string
+  locked:
+    type: boolean

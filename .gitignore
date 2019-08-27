@@ -1,0 +1,4 @@
+vendor/
+config.yml
+private_config.yml
+output/logger.log

@@ -1,0 +1,18 @@
+type: object
+required:
+  - selectionSource
+properties:
+  name:
+    type: string
+  label:
+    type: string
+  type:
+    type: string
+  length:
+    type: integer
+  regex:
+    type: string
+  selectionSource:
+    type: string
+  userRequired:
+    userRequired: bool

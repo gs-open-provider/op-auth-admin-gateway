@@ -1,0 +1,22 @@
+type: object
+properties:
+  id:
+    type: integer
+  domain:
+    type: string
+  title:
+    type: string
+  url:
+    type: string
+  pubDate:
+    type: string
+  description:
+    type: string
+  author:
+    type: string
+  source:
+    type: string
+  iconUrl:
+    type: string
+  language:
+    type: string

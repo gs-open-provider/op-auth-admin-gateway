@@ -1,0 +1,16 @@
+type: object
+properties:
+  success:
+    type: boolean
+  error:
+    type: object
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+  data:
+    name: rssfeeds-list
+    type: array
+    items:
+      $ref: ./rssfeed.yml

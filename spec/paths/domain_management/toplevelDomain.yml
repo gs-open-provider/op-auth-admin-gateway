@@ -1,0 +1,133 @@
+get:
+  tags: ["domain-management"]
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/domain_management/allTLDResponse.yml'
+    400:
+      description: BAD REQUEST
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    401:
+      description: UNAUTHORIZED
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    403:
+      description: FORBIDDEN
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    404:
+      description: NOT FOUND
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    500:
+      description: INTERNAL SERVER ERROR
+      schema:
+        $ref: './definitions/generalResponse.yml'
+post:
+  tags: ["domain-management"]
+  parameters:
+    - name: addTLDRequest
+      in: body
+      schema:
+        $ref: './definitions/domain_management/toplevelDomain.yml'
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    400:
+      description: BAD REQUEST
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    401:
+      description: UNAUTHORIZED
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    403:
+      description: FORBIDDEN
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    404:
+      description: NOT FOUND
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    500:
+      description: INTERNAL SERVER ERROR
+      schema:
+        $ref: './definitions/generalResponse.yml'
+put:
+  tags: ["domain-management"]
+  parameters:
+    - name: updateTLDRequest
+      in: body
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+          owner:
+            type: string
+          description:
+            type: string
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    400:
+      description: BAD REQUEST
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    401:
+      description: UNAUTHORIZED
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    403:
+      description: FORBIDDEN
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    404:
+      description: NOT FOUND
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    500:
+      description: INTERNAL SERVER ERROR
+      schema:
+        $ref: './definitions/generalResponse.yml'
+delete:
+  tags: ["domain-management"]
+  parameters:
+    - name: deleteTLDRequest
+      in: body
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    400:
+      description: BAD REQUEST
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    401:
+      description: UNAUTHORIZED
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    403:
+      description: FORBIDDEN
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    404:
+      description: NOT FOUND
+      schema:
+        $ref: './definitions/generalResponse.yml'
+    500:
+      description: INTERNAL SERVER ERROR
+      schema:
+        $ref: './definitions/generalResponse.yml'

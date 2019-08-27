@@ -1,0 +1,38 @@
+type: object
+properties:
+  domain:
+    type: string
+  logoURL:
+    type: string
+  textFont:
+    type: string
+  textFontSize:
+    type: string
+  textFontColor:
+    type: string
+  header1Font:
+    type: string
+  header1FontSize:
+    type: string
+  header1FontColor:
+    type: string
+  header2Font:
+    type: string
+  header2FontSize:
+    type: string
+  header2FontColor:
+    type: string
+  backgroundImageURL:
+    type: string
+  backgroundColor:
+    type: string
+  navbarColor:
+    type: string
+  navbarFont:
+    type: string
+  navbarFontSize:
+    type: string
+  navbarFontColor:
+    type: string
+  navbarSelectColor:
+    type: string

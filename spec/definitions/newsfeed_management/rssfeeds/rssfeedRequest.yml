@@ -1,0 +1,10 @@
+type: object
+properties:
+  name:
+    type: string
+  url:
+    type: string
+  iconUrl:
+    type: string
+  language:
+    type: string

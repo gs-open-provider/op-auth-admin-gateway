@@ -1,0 +1,16 @@
+data: object
+properties:
+  entity:
+    type: string
+  key:
+    type: string
+  addFields:
+    fields: fields
+    type: array
+    items:
+      $ref: ./entityField.yml
+  deleteFields:
+    fields: fields
+    type: array
+    items:
+      $ref: ./entityField.yml

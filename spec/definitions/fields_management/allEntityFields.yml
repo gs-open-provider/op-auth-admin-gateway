@@ -1,0 +1,23 @@
+type: object
+properties:
+  success:
+    type: boolean
+  error:
+    type: object
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+  data:
+    type: object
+    properties:
+      entity:
+        type: string
+      key:
+        type: string
+      fields:
+        fields: fields
+        type: array
+        items:
+          $ref: ./entityField.yml

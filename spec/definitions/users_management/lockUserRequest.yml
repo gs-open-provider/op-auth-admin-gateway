@@ -1,0 +1,8 @@
+type: object
+properties:
+  cred:
+    type: string
+  mode:
+    type: string
+  lock:
+    lock: boolean
